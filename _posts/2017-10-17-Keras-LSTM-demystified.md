@@ -17,5 +17,4 @@ We will follow the steps bellow :
 ```
 import keras 
 from keras.layers import LSTM
-
 ```

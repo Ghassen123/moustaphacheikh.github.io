@@ -1,4 +1,5 @@
 source "https://rubygems.org"
+<<<<<<< HEAD
 
 # use local theme gem for testing
 gem "jekyll-theme-basically-basic", path: "../"
@@ -12,3 +13,6 @@ group :jekyll_plugins do
 end
 
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
+=======
+gem "github-pages", group: :jekyll_plugins
+>>>>>>> origin/master

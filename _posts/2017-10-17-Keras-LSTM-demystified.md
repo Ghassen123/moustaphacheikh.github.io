@@ -60,3 +60,15 @@ def remove_diacritics(string):
     return re.sub(regex, '', string)
 ```
 
+```python
+string = "بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ"
+```
+```python
+print("Avant: ",string)
+string = remove_diacritics(string)
+print("Après: ",string)
+```
+```python
+Avant:  بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ
+Après:  بسم الله الرحمٰن الرحيم
+```

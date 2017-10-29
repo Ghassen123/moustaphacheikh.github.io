@@ -137,31 +137,107 @@ Après:  مواصفات وسعر هاتف أيفون الجديد
 
 Donc, nous pouvons voir ci-dessus que remove_numbers(string) supprime tous les nombres d'une chaîne et renvoie la version propre.
 
-### Supprimer les nombres
+### Normalise une chaîne
 ***
 
 ```python
-def remove_numbers(string):
-    regex = re.compile(r"(\d|[\u0660\u0661\u0662\u0663\u0664\u0665\u0666\u0667\u0668\u0669])+")
-    return re.sub(regex, ' ', string)
+def noramlize(string):
+    regex = re.compile(r'[إأٱآا]')
+    string = re.sub(regex, 'ا', string)
+    regex = re.compile(r'[ى]')
+    string = re.sub(regex, 'ي', string)
+    regex = re.compile(r'[ؤئ]')
+    string = re.sub(regex, 'ء', string)
+    return string
 ```
 
 Testons cette méthode sur un exemple :
 
 ```python
-string ="مواصفات وسعر هاتف أيفون الجديد1234567890   ٠‎١‎٢‎٣‎٤‎٥‎٦‎ ٧‎٨‎٩"
+string = " ؤ ئ إ أ ٱ آ ا ى ي"
 ```
 
 ```python
 print("Avant: ",string)
-string = remove_numbers(string)
+string = noramlize(string)
 print("Après: ",string)
 ```
 
 ```python
-Avant:  مواصفات وسعر هاتف أيفون الجديد1234567890   ٠‎١‎٢‎٣‎٤‎٥‎٦‎ ٧‎٨‎٩
-Après:  مواصفات وسعر هاتف أيفون الجديد 
+Avant:   ؤ ئ إ أ ٱ آ ا ى ي
+Après:   ء ء ا ا ا ا ا ي ي
 ```
 
-Donc, nous pouvons voir ci-dessus que remove_numbers(string) supprime tous les nombres d'une chaîne et renvoie la version propre.
+### Supprimer les mots non arabes
+***
 
+```python
+def remove_non_arabic_words(string):
+    return ' '.join([word for word in string.split() if not re.findall(
+        r'[^\s\u0621\u0622\u0623\u0624\u0625\u0626\u0627\u0628\u0629\u062A\u062B\u062C\u062D\u062E\u062F\u0630\u0631\u0632\u0633\u0634\u0635\u0636\u0637\u0638\u0639\u063A\u0640\u0641\u0642\u0643\u0644\u0645\u0646\u0647\u0648\u0649\u064A]',
+        word)])
+```
+
+Testons cette méthode sur un exemple :
+
+```python
+string = "مواڞفات وسعر هاتف أيفون 8 الجدي"
+```
+
+```python
+print("Avant: ",string)
+string = remove_non_arabic_words(string)
+print("Après: ",string)
+```
+
+```python
+Avant:  مواڞفات وسعر هاتف أيفون 8 الجدي
+Après:  وسعر هاتف أيفون الجدي
+```
+Parfois, nous pouvons trouver un mot qui a des symboles non arabes. On peut voir ci-dessus que remove_non_arabic_words (string) supprime tous les mots non arabes (ont un symbole non arabe) d'une chaîne et retourne la version propre. par exemple مواڞفات
+
+### Supprimer les espaces supplémentaires
+***
+
+```python
+def remove_extra_whitespace(string):
+    string = re.sub(r'\s+', ' ', string)
+    return re.sub(r"\s{2,}", " ", string).strip()
+```
+
+Testons cette méthode sur un exemple :
+
+```python
+string = "مواڞفات       وسعر هاتف     أيفون 8    الجدي"
+```
+
+```python
+print("Avant: ",string)
+string = remove_extra_whitespace(string)
+print("Après: ",string)
+```
+```python
+before:  مواڞفات       وسعر هاتف     أيفون 8    الجدي
+after:  مواڞفات وسعر هاتف أيفون 8 الجدي
+```
+### Supprimer les espaces supplémentaires
+***
+
+```python
+def remove_extra_whitespace(string):
+    string = re.sub(r'\s+', ' ', string)
+    return re.sub(r"\s{2,}", " ", string).strip()
+```
+
+Testons cette méthode sur un exemple :
+
+```python
+string = "مواڞفات       وسعر هاتف     أيفون 8    الجدي"
+```
+
+```python
+print("Avant: ",string)
+string = remove_extra_whitespace(string)
+print("Après: ",string)
+```
+Nous pouvons voir ci-dessus que remove_extra_whitespace (string) supprime les espaces blancs supplémentaires d'une chaîne et retourner la version propre.

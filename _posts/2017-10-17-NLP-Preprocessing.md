@@ -220,13 +220,12 @@ print("Après: ",string)
 before:  مواڞفات       وسعر هاتف     أيفون 8    الجدي
 after:  مواڞفات وسعر هاتف أيفون 8 الجدي
 ```
-### Supprimer les espaces supplémentaires
+### Supprimer les symboles non arabes
 ***
 
 ```python
-def remove_extra_whitespace(string):
-    string = re.sub(r'\s+', ' ', string)
-    return re.sub(r"\s{2,}", " ", string).strip()
+def remove_non_arabic_symbols(string):
+    return re.sub(r'[^\u0600-\u06FF]', ' ', string)
 ```
 
 Testons cette méthode sur un exemple :
@@ -237,7 +236,12 @@ string = "مواڞفات       وسعر هاتف     أيفون 8    الجدي"
 
 ```python
 print("Avant: ",string)
-string = remove_extra_whitespace(string)
+string = remove_non_arabic_symbols(string)
 print("Après: ",string)
 ```
-Nous pouvons voir ci-dessus que remove_extra_whitespace (string) supprime les espaces blancs supplémentaires d'une chaîne et retourner la version propre.
+
+```python
+Avant:  مواصفات   وسعر هاتف     أيفون 8    الجدي☯ ☸ ☹ ☺ ☻ ☼ ☽ ☾ ☿ ♀ ♁ ♂ ♃ ♄ ♅ ♆ ♇  । ॥ ᜵ ᜶ ჻ ⅋ 〽 ॰ ℄ ︕ ︖ ︗ ︘ ︙ 𝚤 𝚥
+Après:  مواصفات وسعر هاتف أيفون الجدي
+```
+comme prévu nous pouvons voir ci-dessus que remove_non_arabic_symbols(string) supprime tous les symboles non arabes d'une chaîne et retourner la version propre.

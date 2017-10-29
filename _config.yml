@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "default" # "air", "contrast", "dark", "dirt", "mint"
 
 # Site Settings
 locale                   : "en"
-title                    : "Moustapha"
+title                    : "Blog"
 title_separator          : "-"
 name                     : "Moustapha Cheikh"
 description              : "This my personal websites where i write blogs."
@@ -85,7 +85,7 @@ analytics:
 author:
   name             : "Moustapha Cheikh"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
+  bio              : "Machine Learning & deep learning researcher, I love working with Python to do data analysis and data visualization."
   location         : "Somewhere"
   email            : "moustapha.ml.cheikh@gmail.com"
   uri              :

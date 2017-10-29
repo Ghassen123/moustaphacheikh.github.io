@@ -1,20 +1,19 @@
 ---
-title: "Keras: LSTM demystified"
+title: "TALN: Prétraitement du texte arabe dans 10 lignes de codes"
 categories:
-  - Deep Learning
+  - NLP
 tags:
-  - keras
-  - LSTM
+  - Python
+  - Regex
 ---
+## Introduction
+Aujourd'hui, les entreprises font face à une énorme quantité et une grande variété de données - les appels des clients, leurs e-mails, les tweets, les données provenant d'applications mobiles et autres. Il faut beaucoup d'efforts et de temps pour rendre ces données utiles. L'une des principales compétences dans l'extraction d'informations à partir de données de texte est le traitement automatique du langage naturel (TALN).
 
-Using LSTM may not be easy if you are starting with keras. In this article I am going to explain diffrent examples in keras.
-We will follow the steps bellow :
+Le traitement automatique du langage naturel (TALN) est un domaine de recherche et d'application qui explore comment les ordinateurs peuvent être utilisés pour comprendre et manipuler le texte en langage naturel. Compte tenu de l'augmentation du contenu sur Internet et les médias sociaux, c'est l'une des compétences incontournables pour tous les spécialistes des données.
 
-* Import keras and diffrent layers
-* Explain the dataset
-* Use LSTM
+
   
-```
+```python
 import keras 
 from keras.layers import LSTM
 ```

@@ -8,13 +8,13 @@ title: Contact Long Haul
   <div class="contactContent">
     <p>If you have questions feel free to email me. Enjoy!</p>
   </div>
-  <form action="http://formspree.io/devcheikh@gmail.com" method="POST">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" class="full-width"><br>
-    <label for="email">Email Address</label>
-    <input type="email" id="email" name="_replyto" class="full-width"><br>
-    <label for="message">Message</label>
-    <textarea name="message" id="message" cols="30" rows="10" class="full-width"></textarea><br>
-    <input type="submit" value="Send" class="button">
-  </form>
+<form method="POST" action="http://formspree.io/devcheikh@gmail.com">
+<label for="name">Name</label>
+  <input type="text" id="name" name="name" class="full-width"><br>
+  <label for="email">Email Address</label>
+  <input type="email" name="email" placeholder="Your email">
+  <label for="message">Message</label>
+  <textarea name="message" placeholder="Your message"></textarea>
+  <button type="submit">Send</button>
+</form>
 </div>

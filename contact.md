@@ -6,7 +6,7 @@ title: Contact Long Haul
 <div id="contact">
   <h1 class="pageTitle">Contact Me</h1>
   <div class="contactContent">
-    <p>If you have questions about the theme feel free to email me. Enjoy!</p>
+    <p>If you have questions feel free to email me. Enjoy!</p>
   </div>
   <form action="http://formspree.io/your@mail.com" method="POST">
     <label for="name">Name</label>

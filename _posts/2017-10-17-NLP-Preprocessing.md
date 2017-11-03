@@ -1,10 +1,9 @@
 ---
-title: "TALN: Prétraitement du texte arabe dans 10 lignes de codes"
+title: "TALN: Prétraitement du texte arabe pour les chercheurs en 10 lignes"
 layout: post
 date:   2017-10-17
 ---
 
-## Introduction
 
 Aujourd'hui, les entreprises font face à une énorme quantité et une grande variété de données - les appels des clients, leurs e-mails, les tweets, les données provenant d'applications mobiles et autres. Il faut beaucoup d'efforts et de temps pour rendre ces données utiles. L'une des principales compétences dans l'extraction d'informations à partir de données de texte est le traitement automatique du langage naturel (TALN).
 
@@ -22,7 +21,8 @@ Dans chaque tâche de traitement de la langue naturelle, il y a quelques étapes
             .
             .
     * Remove ponctuatons
-    
+   
+ 
 Dans les prochains articles, nous allons voir les titres suivants:
 
 * **Stemming**

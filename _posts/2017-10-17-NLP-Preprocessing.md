@@ -4,12 +4,17 @@ layout: post
 date:   2017-10-17
 ---
 
+<p align="center"><img src='../assets/img/nlp.png'></p>
 
 Aujourd'hui, les entreprises font face à une énorme quantité et une grande variété de données - les appels des clients, leurs e-mails, les tweets, les données provenant d'applications mobiles et autres. Il faut beaucoup d'efforts et de temps pour rendre ces données utiles. L'une des principales compétences dans l'extraction d'informations à partir de données de texte est le traitement automatique du langage naturel (TALN).
 
 Le traitement automatique du langage naturel (TALN) est un domaine de recherche et d'application qui explore comment les ordinateurs peuvent être utilisés pour comprendre et manipuler le texte en langage naturel. Compte tenu de l'augmentation du contenu sur Internet et les médias sociaux, c'est l'une des compétences incontournables pour tous les spécialistes des données.
 
-Dans chaque tâche de traitement de la langue naturelle, il y a quelques étapes de prétraitement communes que nous devons faire. Je vais expliquer et fournir le code pour les techniques de pré-traitement suivantes en python.
+<p align="center"><img src='../assets/img/img.jpg'></p>
+
+Les mots sont souvent considérés comme les constituants de base des textes. Le premier module d'un pipeline TALN est souvent un tokenizer qui transforme les textes enséquences de mots. Cependant, différentes techniques de prétraitement peuvent être (et sont) davantage utilisées dans la pratique. Ceux-ci incluent la lemmatisation ou POS. Mais dans la vraie vie avant tout cela, nous devons préparer le texte avant de commencer. Ce processus est appelé nettoyage de texte.
+Dans ce tutoriel, je vais écrire quelques méthodes génériques pour le nettoyage de texte que vous pouvez combiner comme vous le souhaitez, pour obtenir le résultat final.
+
 
 * **Nettoyage** 
 
@@ -31,7 +36,8 @@ Dans les prochains articles, nous allons voir les titres suivants:
 * **Word Embeddings**
 
 ## Méthodes de prétraitement
-
+Maintenant nous allons mettre en œuvre chaque méthode séparément et voir le travail sur un exemple,
+et après cela, nous allons les combiner pour obtenir le résultat final.
 ### Importer les bibliothèques requises
 ***
 

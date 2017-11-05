@@ -242,12 +242,40 @@ Testons cette méthode sur un exemple :
 
 ```python
 string = "مواڞفات       وسعر هاتف     أيفون 8    الجدي"
-
 print("Avant: ",string)
 string = remove_non_arabic_symbols(string)
 print("Après: ",string)
+```
 
+```python
 Avant:  مواصفات   وسعر هاتف     أيفون 8    الجدي☯ ☸ ☹ ☺ ☻ ☼ ☽ ☾ ☿ ♀ ♁ ♂ ♃ ♄ ♅ ♆ ♇  । ॥ ᜵ ᜶ ჻ ⅋ 〽 ॰ ℄ ︕ ︖ ︗ ︘ ︙ 𝚤 𝚥
 Après:  مواصفات وسعر هاتف أيفون الجدي
 ```
 comme prévu nous pouvons voir ci-dessus que remove_non_arabic_symbols(string) supprime tous les symboles non arabes d'une chaîne et retourner la version propre.
+
+### Supprimer les ponctuations
+***
+
+```python
+def remove_punctiation(string):
+    return re.sub(
+        r'[\u060C\u061B\u2024\u003A\u2026\
+        \u061F\u0021\u005D\u005B\u0029\
+        \u0028\u002D\u00BB\u00AB\u0022]',
+        ' ', string)
+```
+
+Testons cette méthode sur un exemple :
+
+```python
+text = "  مواصفات   وسعر هاتف     أيفون 8    الجدي ،؛․:…؟! ] [ ) ( - » « "
+print("Avant: \n",remove_extra_whitespace(text))
+string = remove_punctiation(text)
+print("Après: \n",remove_extra_whitespace(string))
+```
+
+```python
+Avant:  مواصفات وسعر هاتف أيفون 8 الجدي ،؛․:…؟! ] [ ) ( - » «
+Après:  مواصفات وسعر هاتف أيفون 8 الجدي
+```
+comme prévu nous pouvons voir ci-dessus que remove_punctiation(string) supprime tous les ponctuations d'une chaîne et retourner la version propre.

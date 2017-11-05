@@ -1,7 +1,7 @@
 ---
 title: "TALN: Prétraitement du texte arabe en 10 lignes"
 layout: post
-date:   2017-10-17
+date:   2017-11-05
 ---
 <center>
 <img src="{{ '/assets/img/nlp.png' | prepend: site.baseurl }}" width="70%" height="70%" alt=""> 

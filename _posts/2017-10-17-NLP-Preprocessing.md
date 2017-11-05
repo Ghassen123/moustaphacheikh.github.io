@@ -1,5 +1,5 @@
 ---
-title: "TALN: Prétraitement du texte arabe pour les chercheurs en 10 lignes"
+title: "TALN: Prétraitement du texte arabe en 10 lignes"
 layout: post
 date:   2017-10-17
 ---

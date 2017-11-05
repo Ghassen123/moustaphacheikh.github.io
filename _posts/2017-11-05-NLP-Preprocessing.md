@@ -301,7 +301,7 @@ Après:  مواصفات وسعر من هاتف أيفون من الجديد
 ```
 Comme prévu nous pouvons voir ci-dessus que remove_dubplicated_letters(string) supprime tous les lettre double d'une chaîne et retourner la version propre.
 
-## Le prétraitement en tant que collection d'étapes
+### 2. Le prétraitement en tant que collection d'étapes
 
 Nous pouvons utiliser la méthode ci-dessus pour créer un pipeline de prétraitement.
 
@@ -343,7 +343,7 @@ Après:  بسم الله الرحيم مواصفات وسعر هاتف ايفو�
 
 En général, nous ajoutons ce que nous voulons dans la méthode de prétraitement.
 
-## Conclusion 
+### 3. Conclusion 
 Nous avons vu comment utiliser des expressions régulières pour créer différentes méthodes de prétraitement de texte arabe, nous pouvons utiliser ces méthodes pour créer un pipeline de pré-traitement en moins de 10 lignes de code. N'hésitez pas à utiliser ce code comme vous le souhaitez.
 
 Si vous avez aimé ce post vous pouvez me suivre sur [Twitter](https://twitter.com/MsCheikh) pour voir les prochains posts. Et si vous avez des questions il suffit de m'envoyer un message.

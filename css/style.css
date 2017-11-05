@@ -1103,7 +1103,7 @@ MENU STYLING
 POST STYLING
 ***************/
   .post h1, .post h2, .post h3, .post h4, .post h5, .post h6, .post p, .post ul, .post ol, .post dl, .post .pageTitle {
-    width: 100%;
+    width: 75%;
     float: none;
     margin: 0 auto 2rem; }
   .post h1, .post .h1, .post h2, .post .h2, .post h3, .post .h3, .post h4, .post .h4, .post h5, .post .h5, .post h6, .post .h6 {
@@ -1130,7 +1130,7 @@ POST STYLING
 POST NAV STYLING
 ***************/
   .postNav .prev, .postNav .next {
-    width: 50%; }
+    width: 100%; }
   .postNav .prev {
     float: left;
     text-align: left; }

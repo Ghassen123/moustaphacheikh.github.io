@@ -4,7 +4,7 @@ layout: post
 date:   2017-10-17
 ---
 <center>
-<img src="{{ '/assets/img/nlp.png' | prepend: site.baseurl }}" alt=""> 
+<img src="{{ '/assets/img/nlp.png' | prepend: site.baseurl }}" width="70%" height="70%" alt=""> 
 <figcaption><a href="https://ontotext.com/top-5-semantic-technology-trends-2017/">This image from here</a></figcaption>
 </center>
 

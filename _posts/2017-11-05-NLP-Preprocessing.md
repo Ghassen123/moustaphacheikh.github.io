@@ -42,10 +42,10 @@ Dans les prochains articles, nous allons voir les titres suivants:
 * **Part-Of-Speech Tagging**
 * **Word Embeddings**
 
-## Méthodes de prétraitement
+## 1. Méthodes de prétraitement
 Maintenant nous allons mettre en œuvre chaque méthode séparément et voir le travail sur un exemple,
 et après cela, nous allons les combiner pour obtenir le résultat final.
-### Importer les bibliothèques requises
+#### Importer les bibliothèques requises
 ***
 
 Tout d'abord, importons les bibliothèques requises
@@ -75,7 +75,7 @@ Nous allons implémenter les méthodes suivantes:
 
 * **remove_dubplicated_letters(string)**: Supprime les lettres en double et renvoie la chaîne de résultat.
 
-### Supprimer les signes diacritique
+#### Supprimer les signes diacritique
 ***
 
 ```python
@@ -99,7 +99,7 @@ Après:  بسم الله الرحمٰن الرحيم
 
 Nous pouvons voir ci-dessus que remove_diacritics(string) supprime tous les signes diacritiques d'une chaîne et renvoie la version propre.
 
-### supprimer les URLs
+#### supprimer les URLs
 ***
 
 ```python
@@ -125,7 +125,7 @@ Après:    مواصفات وسعر هاتف أيفون 8 الجديد
 
 Donc, nous pouvons voir ci-dessus que remove_urls(string) supprime toutes les URLs qui commencent avec http (s) ou ftp d'une chaîne et retourne la version propre.
 
-### Supprimer les nombres
+#### Supprimer les nombres
 ***
 
 ```python
@@ -151,7 +151,7 @@ Après:  مواصفات وسعر هاتف أيفون الجديد
 
 Donc, nous pouvons voir ci-dessus que remove_numbers(string) supprime tous les nombres d'une chaîne et renvoie la version propre.
 
-### Normalise une chaîne
+#### Normalise une chaîne
 ***
 
 ```python
@@ -178,7 +178,7 @@ Avant:   ؤ ئ إ أ ٱ آ ا ى ي
 Après:   ء ء ا ا ا ا ا ي ي
 ```
 
-### Supprimer les mots non arabes
+#### Supprimer les mots non arabes
 ***
 
 ```python
@@ -209,7 +209,7 @@ Après:  وسعر هاتف أيفون الجدي
 ```
 Parfois, nous pouvons trouver un mot qui a des symboles non arabes. On peut voir ci-dessus que remove_non_arabic_words (string) supprime tous les mots non arabes (ont un symbole non arabe) d'une chaîne et retourne la version propre. par exemple مواڞفات
 
-### Supprimer les espaces supplémentaires
+#### Supprimer les espaces supplémentaires
 ***
 
 ```python
@@ -230,7 +230,7 @@ print("Après: ",string)
 before:  مواڞفات       وسعر هاتف     أيفون 8    الجدي
 after:  مواڞفات وسعر هاتف أيفون 8 الجدي
 ```
-### Supprimer les symboles non arabes
+#### Supprimer les symboles non arabes
 ***
 
 ```python
@@ -252,7 +252,7 @@ Après:  مواصفات وسعر هاتف أيفون الجدي
 ```
 Comme prévu nous pouvons voir ci-dessus que remove_non_arabic_symbols(string) supprime tous les symboles non arabes d'une chaîne et retourner la version propre.
 
-### Supprimer les ponctuations
+#### Supprimer les ponctuations
 ***
 
 ```python
@@ -279,7 +279,7 @@ Après:  مواصفات وسعر هاتف أيفون 8 الجدي
 ```
 Comme prévu nous pouvons voir ci-dessus que remove_punctiation(string) supprime tous les ponctuations d'une chaîne et retourner la version propre.
 
-### Supprimer les lettre doubles
+#### Supprimer les lettre doubles
 ***
 
 ```python
@@ -301,7 +301,7 @@ Après:  مواصفات وسعر من هاتف أيفون من الجديد
 ```
 Comme prévu nous pouvons voir ci-dessus que remove_dubplicated_letters(string) supprime tous les lettre double d'une chaîne et retourner la version propre.
 
-# Le prétraitement en tant que collection d'étapes
+## Le prétraitement en tant que collection d'étapes
 
 Nous pouvons utiliser la méthode ci-dessus pour créer un pipeline de prétraitement.
 

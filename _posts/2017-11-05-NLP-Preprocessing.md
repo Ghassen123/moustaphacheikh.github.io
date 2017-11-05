@@ -341,5 +341,8 @@ Après:  بسم الله الرحيم مواصفات وسعر هاتف ايفو�
 
 En général, nous ajoutons ce que nous voulons dans la méthode de prétraitement.
 
-Vous pouvez me suivre sur [Twitter](https://twitter.com/MsCheikh) et si vous avez des questions il suffit de m'envoyer un message
+## Conclusion 
+Nous avons vu comment utiliser des expressions régulières pour créer différentes méthodes de prétraitement de texte arabe, nous pouvons utiliser ces méthodes pour créer un pipeline de pré-traitement en moins de 10 lignes de code. N'hésitez pas à utiliser ce code comme vous le souhaitez.
+
+Si vous avez aimé ce post vous pouvez me suivre sur [Twitter](https://twitter.com/MsCheikh) pour voir les prochains posts. Et si vous avez des questions il suffit de m'envoyer un message.
 

@@ -5,7 +5,7 @@ date:   2017-10-17
 ---
 <center>
 <img src="{{ '/assets/img/nlp.png' | prepend: site.baseurl }}" alt=""> 
-[Thie image from here](https://ontotext.com/top-5-semantic-technology-trends-2017/)
+<figcaption><a href="https://ontotext.com/top-5-semantic-technology-trends-2017/">This image from here</a></figcaption>
 </center>
 
 Aujourd'hui, les nous sommes en face à une énorme quantité et une grande variété de données - les e-mails, les tweets, les données provenant d'applications mobiles et autres. 

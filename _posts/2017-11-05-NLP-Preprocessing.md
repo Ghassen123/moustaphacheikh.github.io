@@ -1,6 +1,7 @@
 ---
 title: "TALN: Prétraitement du texte arabe en 10 lignes"
 layout: post
+comments: true
 date:   2017-11-05
 ---
 <center>

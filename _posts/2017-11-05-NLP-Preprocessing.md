@@ -305,7 +305,7 @@ Comme prévu nous pouvons voir ci-dessus que remove_dubplicated_letters(string) 
 
 Nous pouvons utiliser la méthode ci-dessus pour créer un pipeline de prétraitement.
 
-### Supprimer les lettre doubles
+
 ***
 
 ```python
@@ -330,7 +330,8 @@ def preprocessing(string):
 Testons cette méthode sur un exemple :
 
 ```python
-text = "مواڞفات وسعر هاتف أيفون  fq fddfd 8 الجدي"
+text = "بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِ" +\
+"ftp://ift.tt/2xWCmyr مواصفات وسسسسسعر هاتف أيفون 8 الجديد https://ift.tt/2xWCmyr"
 print("Avant: ",remove_extra_whitespace(text))
 string = preprocessing(text)
 print("Après: ",remove_extra_whitespace(string))

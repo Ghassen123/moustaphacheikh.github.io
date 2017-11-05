@@ -6,6 +6,14 @@ date:   2017-10-17
 <center>
 <img src="{{ '/assets/img/nlp.png' | prepend: site.baseurl }}" alt=""> 
 </center>
+
+<figure>
+	<center>
+   <img src="{{ '/assets/img/nlp.png' | prepend: site.baseurl }}" alt=""> 
+   </center>
+	<figcaption>[Thie image from here](https://ontotext.com/top-5-semantic-technology-trends-2017/)</figcaption>
+</figure>
+
 Aujourd'hui, les nous sommes en face à une énorme quantité et une grande variété de données - les e-mails, les tweets, les données provenant d'applications mobiles et autres. 
 Il faut beaucoup d'efforts et de temps pour rendre ces données utiles. L'une des principales compétences dans l'extraction d'informations à partir de données de texte est le traitement automatique du langage naturel (TALN).
 

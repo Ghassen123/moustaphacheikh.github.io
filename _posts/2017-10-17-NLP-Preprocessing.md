@@ -115,9 +115,7 @@ print("Avant: ",text)
 string = remove_urls(string)
 print("Après: ",string)
 ```
-
 ```python
-
 Avant:  ftp://ift.tt/2xWCmyr مواصفات وسعر هاتف أيفون 8 الجديد https://ift.tt/2xWCmyr
 Après:    مواصفات وسعر هاتف أيفون 8 الجديد  
 ```
@@ -172,7 +170,6 @@ print("Avant: ",string)
 string = noramlize(string)
 print("Après: ",string)
 ```
-
 ```python
 Avant:   ؤ ئ إ أ ٱ آ ا ى ي
 Après:   ء ء ا ا ا ا ا ي ي
@@ -203,7 +200,6 @@ print("Avant: ",string)
 string = remove_non_arabic_words(string)
 print("Après: ",string)
 ```
-
 ```python
 Avant:  مواڞفات وسعر هاتف أيفون 8 الجدي
 Après:  وسعر هاتف أيفون الجدي
@@ -247,7 +243,6 @@ print("Avant: ",string)
 string = remove_non_arabic_symbols(string)
 print("Après: ",string)
 ```
-
 ```python
 Avant:  مواصفات   وسعر هاتف     أيفون 8    الجدي☯ ☸ ☹ ☺ ☻ ☼ ☽ ☾ ☿ ♀ ♁ ♂ ♃ ♄ ♅ ♆ ♇  । ॥ ᜵ ᜶ ჻ ⅋ 〽 ॰ ℄ ︕ ︖ ︗ ︘ ︙ 𝚤 𝚥
 Après:  مواصفات وسعر هاتف أيفون الجدي
@@ -297,7 +292,6 @@ print("Avant: ",remove_extra_whitespace(text))
 string = remove_dubplicated_letters(text)
 print("Après: ",remove_extra_whitespace(string))
 ```
-
 ```python
 Avant:  مواصفات وسعر من هاتف أيفون مممن الجديد
 Après:  مواصفات وسعر من هاتف أيفون من الجديد
@@ -338,7 +332,6 @@ print("Avant: ",remove_extra_whitespace(text))
 string = preprocessing(text)
 print("Après: ",remove_extra_whitespace(string))
 ```
-
 ```python
 Avant:  بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِftp://ift.tt/2xWCmyr مواصفات وسسسسسعر هاتف أيفون 8 الجديد https://ift.tt/2xWCmyr
 Après:  بسم الله الرحيم مواصفات وسعر هاتف ايفون الجديد

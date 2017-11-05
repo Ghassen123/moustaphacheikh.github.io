@@ -340,3 +340,6 @@ Après:  بسم الله الرحيم مواصفات وسعر هاتف ايفو�
 ```
 
 En général, nous ajoutons ce que nous voulons dans la méthode de prétraitement.
+
+Vous pouvez me suivre sur [Twitter](https://twitter.com/MsCheikh) et si vous avez des questions il suffit de m'envoyer un message
+

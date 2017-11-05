@@ -1130,7 +1130,7 @@ POST STYLING
 POST NAV STYLING
 ***************/
   .postNav .prev, .postNav .next {
-    width: 100%; }
+    width: 50%; }
   .postNav .prev {
     float: left;
     text-align: left; }

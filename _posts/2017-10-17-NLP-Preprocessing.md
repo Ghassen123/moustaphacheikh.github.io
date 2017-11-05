@@ -279,3 +279,68 @@ Avant:  مواصفات وسعر هاتف أيفون 8 الجدي ،؛․:…؟! 
 Après:  مواصفات وسعر هاتف أيفون 8 الجدي
 ```
 comme prévu nous pouvons voir ci-dessus que remove_punctiation(string) supprime tous les ponctuations d'une chaîne et retourner la version propre.
+
+### Supprimer les lettre doubles
+***
+
+```python
+def remove_dubplicated_letters(string):
+    return re.sub(r'(.)\1{2,}', r'\1', string)
+```
+
+Testons cette méthode sur un exemple :
+
+```python
+text = "مواصفات وسعر من هاتف أيفون   مممن الجديد"
+print("Avant: ",remove_extra_whitespace(text))
+string = remove_dubplicated_letters(text)
+print("Après: ",remove_extra_whitespace(string))
+```
+
+```python
+Avant:  مواصفات وسعر من هاتف أيفون مممن الجديد
+Après:  مواصفات وسعر من هاتف أيفون من الجديد
+```
+comme prévu nous pouvons voir ci-dessus que remove_dubplicated_letters(string) supprime tous les lettre double d'une chaîne et retourner la version propre.
+
+# Le prétraitement en tant que collection d'étapes
+
+Nous pouvons utiliser la méthode ci-dessus pour créer un pipeline de prétraitement.
+
+### Supprimer les lettre doubles
+***
+
+```python
+def preprocessing(string):
+    # remove diacritics
+    string = remove_diacritics(string)
+    # remove non arabic symbols
+    string = remove_non_arabic_symbols(string)
+    # remove punctiations
+    string = remove_punctiation(string)
+    # remove dubplicated letters
+    string = remove_dubplicated_letters(string)
+    # remove non arabic words
+    string = remove_non_arabic_words(string)
+    # normelize the text
+    string = noramlize(string)
+    # remove extra white spaces
+    string = remove_extra_whitespace(string)
+    return string
+```
+
+Testons cette méthode sur un exemple :
+
+```python
+text = "مواڞفات وسعر هاتف أيفون  fq fddfd 8 الجدي"
+print("Avant: ",remove_extra_whitespace(text))
+string = preprocessing(text)
+print("Après: ",remove_extra_whitespace(string))
+```
+
+```python
+Avant:  بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيمِftp://ift.tt/2xWCmyr مواصفات وسسسسسعر هاتف أيفون 8 الجديد https://ift.tt/2xWCmyr
+Après:  بسم الله الرحيم مواصفات وسعر هاتف ايفون الجديد
+```
+
+En général, nous ajoutons ce que nous voulons dans la méthode de prétraitement.
